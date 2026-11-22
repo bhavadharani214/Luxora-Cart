@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora | Online Shopping</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f5f0;
+            color: #333;
+        }
+
+        header {
+            background: #24201d;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #e8c58a;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: #e9dfd1;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero button {
+            background: #24201d;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .products {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+        }
+
+        .product button {
+            background: #24201d;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #24201d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>LUXORA</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Luxora</h2>
+        <p>Discover Your Style. Shop Your Way.</p>
+        <button onclick="document.getElementById('products').scrollIntoView()">
+            Shop Now
+        </button>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+
+        <div class="product-list">
+
+            <div class="product">
+                <h3>Fashion</h3>
+                <p>₹799</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Accessories</h3>
+                <p>₹499</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Beauty</h3>
+                <p>₹599</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 Luxora. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
